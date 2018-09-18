@@ -10,17 +10,45 @@
             
         <h1>I AM A POTATO... sometimes</h1>
         <div class="row">
-            <div class="col-4 button">
+           
+            <div class="col-3">
+		<div class ="button">
                     <h1>Tato1</h1>
+		</div>
             </div>
-            <div class="col-4 button">
+            <div class="col-3">
+                <div class ="button">
                     <h1>Tato2</h1>
+		</div>
             </div>
-            <div class="col-4 button">
+            <div class="col-3">
+                 <div class ="button">
                     <h1>Tato3</h1>
+		</div>
             </div>
-            
+	    <div class="col-3">
+                 <div class ="button">
+                    <h1>Tato4</h1>
+		</div>
+            </div>
 
         </div>
+
+    <script>
+	function moveButtons() {
+		var elem = document.getElementById("button");
+		var pos = 0;
+		var id = setInterval(frame, 5);
+		function frame () {
+		if (pos ==350){
+		clearInterval(id);
+		}else {
+		pos++;
+		elem.style.top = pos + 'px';
+		elem.style.top = pos + 'px';
+		}
+
+		}
+    
     </body>
 </html>

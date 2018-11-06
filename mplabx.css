@@ -1,0 +1,80 @@
+/*text*/
+.text {
+    font-family: "Century Gothic";
+    border: grey groove;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+/*SVG*/
+svg {
+    background-image: url(mplab_screen.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 100%;
+    }
+
+    path {
+            fill: transparent;
+    }
+    
+    .st0{opacity:0.5;}
+    .st1{fill:#F9C7C7;}
+    .st2{fill:#F7F3C6;}
+    .st3{fill:#C7E7F2;}
+    .st4{fill:transparent;}
+    .st5{fill:#E1C8ED;}
+    .st6{fill:#FBB03B;}
+
+
+/*Tooltip*/
+.box-container{
+    position: relative;
+    font-family: Arial;
+}
+.box-content{
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color:white;
+    max-width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: dashed grey;
+   
+}
+
+/*Button to Deci's site*/
+.button {
+    
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    margin: 1px 1px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.button {
+    background-color: burlywood;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100px;
+    height: 20px;
+    font-family: "Century Gothic";
+}
+
+.button:hover{
+    background-color: lightslategrey;
+}

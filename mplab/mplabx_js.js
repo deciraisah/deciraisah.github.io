@@ -3,8 +3,8 @@ var box = document.getElementById('boxAppear');
 function moveBox(a){
     //get coordinates
     var x,y,a;
-    x = event.clientX;
-    y = event.clientY;
+    x = event.pageX;
+    y = event.pageY;
     
     //change text of div element
     switch (a){
@@ -100,11 +100,19 @@ function moveBox(a){
 
     boxAppear.style.visibility="visible";
     //alert("X: "+ x  + " Y: "+ y);
-    //alert("X: "+ (x + 5)+'px'  + " Y: "+ (y + 5) + 'px');
+    //alert("X: "+ x  + " Y: "+ y + " X: "+ (x + 5)+'px'  + " Y: "+ (y + 5) + 'px');
    // boxAppear.style.position = "relative";
     boxAppear.style.left = (x + 5) +'px';
-    boxAppear.style.top = (y + 20)+ 'px';
+    boxAppear.style.top = (y + 15)+ 'px';
 }
 function hide(){
     boxAppear.style.visibility="hidden";
 }
+
+function pop(){
+    alert("You clicked a potato!"); 
+}
+
+/* onhover = blockScreen except for area of icon {
+    showTextBox()
+}*/

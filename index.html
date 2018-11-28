@@ -8,7 +8,7 @@
     </head>
     <body>
         
-        <div class="hero-text"><img src="deciraisah.github.io/pc-03.png" id="pc" class="icon" onmouseover="pcImg(0)" onmouseout="pcImg(1)">
+        <div class="hero-text"><img src="deciraisah.github.io/pc-03.png" id="pc" class="icon" onmouseover="pcImg(a)">
 	<!--<img id="img1" src ="deciraisah.github.io/pc-03.png">
 	<img id="img2" src ="deciraisah.github.io/pc-04.png">-->
         <br>hello there<br>
@@ -22,25 +22,14 @@
 
     <script>
     function pcImg(a){
-	var a;
-        //document.getElementById("pc").src='deciraisah.github.io/pc-04.png';
-	    if (a<1)
-	    {
+	 for (int a=0; a < 1; a++){
 	    document.getElementById("pc").src='deciraisah.github.io/pc-04.png';
-		    a = 1;
-		    //alert (a);
-		    break;
-		    return a;
 	    }
-	    else {
-	    document.getElementById("pc").src='deciraisah.github.io/pc-03.png';
-		    a = 0;
-		    //alert (a);
-		    break;
-		    return a;
-	    }
-	    
+	   
+	   // document.getElementById("pc").src='deciraisah.github.io/pc-03.png';
+		
     }
+	    
 
     function mplabOpen(){
         location.replace("mplab/mplabx.html");

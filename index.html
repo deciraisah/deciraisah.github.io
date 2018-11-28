@@ -9,8 +9,8 @@
     <body>
         
         <div class="hero-text"><img src="deciraisah.github.io/pc-03.png" id="pc" class="icon" onmouseover="pcImg(1)">
-	<img id="img1" src ="deciraisah.github.io/pc-03.png">
-	<img id="img2" src ="deciraisah.github.io/pc-04.png">
+	<!--<img id="img1" src ="deciraisah.github.io/pc-03.png">
+	<img id="img2" src ="deciraisah.github.io/pc-04.png">-->
         <br>hello there<br>
 
             <div class="col-12">
@@ -24,13 +24,13 @@
     function pcImg(a){
 	var a;
 	    var org = document.getElementById("pc");
-	    var img1 = document.getElementById("img1");
+	    var img1 = "deciraisah.github.io/pc-03.png";
 	    var img2 = document.getElementById("img2");
 	if (org == img1){
-		document.getElementById("pc")=img2;
+		document.getElementById("pc").src='img2';
 	}
 	 else{
-		 document.getElementById("pc")=img1;
+		 document.getElementById("pc").src='img1';
 	 }
 
 	return a;

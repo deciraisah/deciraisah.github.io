@@ -23,11 +23,15 @@
     <script>
     function pcImg(a){
 	var a;
+	    var org = document.getElementById("pc");
 	    var img1 = document.getElementById("img1");
 	    var img2 = document.getElementById("img2");
-	if (a != 0){
+	if (org == img1){
 		document.getElementById("pc")=img2;
 	}
+	 else{
+		 document.getElementById("pc")=img1;
+	 }
 
 	return a;
 	

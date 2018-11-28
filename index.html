@@ -8,7 +8,7 @@
     </head>
     <body>
         
-        <div class="hero-text"><img src="deciraisah.github.io/pc-03.png" id="pc" class="icon" onmouseover="pcImg(a)">
+        <div class="hero-text"><img src="deciraisah.github.io/pc-03.png" id="pc" class="icon" onmouseover="pcImg(0)">
 	<!--<img id="img1" src ="deciraisah.github.io/pc-03.png">
 	<img id="img2" src ="deciraisah.github.io/pc-04.png">-->
         <br>hello there<br>
@@ -25,17 +25,15 @@
 	var a;
 	    
         //document.getElementById("pc").src='deciraisah.github.io/pc-04.png';
-	a++;
-	    if (a==1)
+	    if (a<1)
 	    {
 	    document.getElementById("pc").src='deciraisah.github.io/pc-04.png';
-		    a = -1;
+		    a = 1;
 		    alert (a);
 	    }
 	    else {
-		    a--;
 	    document.getElementById("pc").src='deciraisah.github.io/pc-03.png';
-		    a = 1;
+		    a = 0;
 		    alert (a);
 	    }
 	    return a;

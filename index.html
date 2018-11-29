@@ -21,14 +21,20 @@
         
 
     <script>
+    var count = 0;
     function pcImg(){
-	 var pcPc = document.getElementById("pc").src;
-	 //var img1.src='pc-03.png';
-	 //var img2.src='pc-04.png';
-	    alert ("note: ");
-	 /*if (a>1){
-	   document.getElementById("pc").src='deciraisah.github.io/pc-03.png';
-	    }*/
+	var pcPc = document.getElementById("pc").src;
+     	var img1 = document.src='pc-04.png';
+     	if(count <= 0){
+        count ++;
+        pcPc = document.getElementById("pc").src = 'pc-04.png';
+        //alert ("note: "+ pcPc + "\n" + img1 + "\n" + count);
+     }
+	else {
+    count --;
+    pcPc = document.getElementById("pc").src = 'pc-03.png';
+    //alert ("note: "+ pcPc + "\n" + img1 + "\n" + count);
+    }
     }
 	    
 

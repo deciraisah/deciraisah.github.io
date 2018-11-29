@@ -22,9 +22,9 @@
 
     <script>
     var count = 0;
-    function pcImg(){
+    function pcImg(){//this function changes the source of the image when it is hovered on
 	var pcPc = document.getElementById("pc").src;
-     	var img1 = document.src='pc-04.png';
+	//if count is 0, source is changed
      	if(count <= 0){
         count ++;
         pcPc = document.getElementById("pc").src = 'pc-04.png';
@@ -38,7 +38,7 @@
     }
 	    
 
-    function mplabOpen(){
+    function mplabOpen(){//opens the a new page that displays the MPLAB X IDE tutorial
         location.replace("mplab/mplabx.html");
     }
 	

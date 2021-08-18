@@ -1,0 +1,32 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: linen;
+
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    display: flex;
+    flex-direction: column;
+}
+a.btns {
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #824947;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    margin: 10px;
+    border: 0.16em solid #ebd79c;
+}
+.btns:hover{
+    background-color: #ebd79c;;
+
+}
+h1{
+    color: #824947;
+}
